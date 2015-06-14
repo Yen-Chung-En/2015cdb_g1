@@ -112,9 +112,9 @@ class Midterm(object):
         </head>
         <body>
         <a href="spur">spur</a><br />
-        <a href="drawspur">drawspur</a><br />
-        <a href="fileuploadform">上傳檔案</a><br />
-        <a href="download_list">列出上傳檔案</a><br />
+        <form method=POST action=spuraction>
+    a_學號: a_40223247 
+
         </body>
         </html>
         '''
@@ -134,11 +134,9 @@ class Midterm(object):
     <!-- 啟動 brython() -->
     <body onload="brython()">
         
-    <form method=POST action=spuraction>
-    齒數:<input type=text name=N value='''+str(N)+'''><br />
-    模數:<input type=text name=M value = '''+str(M)+'''><br />
-    壓力角:<input type=text name=P value = '''+str(P)+'''><br />
-    <input type=submit value=send>
+
+
+
     </form>
     <br /><a href="index">index</a><br />
     </body>
